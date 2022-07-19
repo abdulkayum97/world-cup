@@ -1,0 +1,70 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ------------
+Header Style 
+-------------- */
+
+.header-container {
+    width: 1120px;
+    margin: auto;
+    background-color: #161616;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 0 100px;
+    margin-top: 50px;
+    color: #fff;
+    grid-column-gap: 24px;
+    height: 646px;
+    position: relative;
+}
+
+.header-img {
+    /* position: relative; */
+    background-color: rebeccapurple;
+}
+
+.header-img img {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    width: 581px;
+}
+
+.header-container .header-content {}
+
+.header-container .header-content h1 {
+    color: #fff;
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.header-container .header-content p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.header-container .header-content a {
+    background-color: #146ebe;
+    padding: 16px 25px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .4s all ease-in-out;
+
+}
+
+.header-container .header-content a:hover {
+    background-color: #fff;
+    color: #146ebe;
+}
