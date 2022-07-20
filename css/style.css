@@ -265,6 +265,31 @@ footer hr {
 }
 
 
+/* For Upcoming Page */
+
+.blog-item article .match-info {
+    text-align: center;
+    padding: 53px 30px;
+}
+
+.match-info .flag {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.match-info .flag span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.blog-item article .match-info h3 {
+    font-size: 20px;
+}
+
+.match-info p {
+    color: #4D4D4D;
+}
 
 
 @media only screen and (max-width: 576px) {
@@ -346,11 +371,6 @@ footer hr {
     .footer-menu nav a {
         display: block;
     }
-
-
-
-
-
 }
 
 
