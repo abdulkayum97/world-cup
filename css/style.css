@@ -3,6 +3,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -11,8 +13,8 @@ Header Style
 -------------- */
 
 .container {
-    width: 1120px;
-    margin: auto
+    width: 1320px;
+    margin: auto;
 }
 
 .header-container {
@@ -23,7 +25,6 @@ Header Style
     border-radius: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 100px;
     margin-top: 50px;
     grid-column-gap: 24px;
     height: 646px;
@@ -33,12 +34,13 @@ Header Style
 
 .header-content {
     align-self: center;
+    padding-left: 100px;
 }
 
 .header-img img {
     position: absolute;
     bottom: 0;
-    right: 80px;
+    right: 70px;
     width: 581px;
 }
 
@@ -76,10 +78,9 @@ Header Style
 /* Blog Style */
 .blog-container {
     width: 100%;
-    margin: auto;
     display: grid;
     grid-template-columns: 312px 1fr;
-    margin-top: 130px;
+    margin: 130px auto;
     grid-column-gap: 24px;
 }
 
@@ -87,7 +88,7 @@ Header Style
     background-color: #161616;
     border-radius: 10px;
     padding: 30px;
-    height: 240px;
+    height: 230px;
 }
 
 .blog-menu ul {
@@ -107,6 +108,7 @@ Header Style
     text-decoration: none;
     display: block;
     transition: .4s all ease-in-out;
+    border-radius: 10px;
 }
 
 .blog-menu ul li a:hover {
@@ -165,4 +167,46 @@ Header Style
 .blog-content .blog-info .time i,
 .blog-content .blog-info .comment i {
     margin-right: 10px;
+}
+
+/* Footer Style */
+footer {
+    background-color: #161616;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.footer-content {}
+
+.footer-content h2 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+footer hr {
+    margin: 50px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-menu {
+    padding: 0 211px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu ul li {}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
 }
