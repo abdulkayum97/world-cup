@@ -1,5 +1,12 @@
-/* Google Font */
+/* ----------------------
+===== GOOGLE FONT ======
+----------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap');
+
+
+/* ----------------------
+===== COMMON STYLES ======
+----------------------- */
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -7,17 +14,14 @@ body {
     padding: 0;
 }
 
-/* COMMON STYLES */
-
-
 .container {
     width: 1320px;
 }
 
 
-/* ------------
-Header Style 
--------------- */
+/* ----------------------
+===== HEADER STYLES ======
+----------------------- */
 
 header {
     display: flex;
@@ -72,7 +76,6 @@ header {
     border-radius: 5px;
     text-decoration: none;
     transition: .4s all ease-in-out;
-
 }
 
 .header-container .header-content a:hover {
@@ -81,7 +84,10 @@ header {
 }
 
 
-/* Blog Style */
+/* ----------------------
+====== BLOG STYLES ======
+----------------------- */
+
 main {
     display: flex;
     justify-content: center;
@@ -161,11 +167,11 @@ main {
     font-weight: 500;
 }
 
-
 .blog-item article .blog-content h3 {
     font-size: 18px;
     color: #161616;
     line-height: 27px;
+    font-weight: 600;
 }
 
 .blog-content .blog-info {
@@ -173,7 +179,6 @@ main {
     justify-content: start;
     color: #161616;
 }
-
 
 .blog-content .blog-info .time {
     margin-right: 30px;
@@ -198,7 +203,9 @@ main {
 }
 
 
-/* Footer Style */
+/* ----------------------
+===== FOOTER STYLES ======
+----------------------- */
 
 footer {
     background-color: #161616;
@@ -207,7 +214,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
 
 .footer-content h2 {
     font-weight: 600;
@@ -219,7 +225,7 @@ footer {
 
 footer hr {
     margin: 50px 0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff1a;
 }
 
 .footer-menu {
@@ -230,7 +236,6 @@ footer hr {
     text-align: center;
 }
 
-
 .footer-menu nav a {
     color: #B9B9B9;
     text-decoration: none;
@@ -240,7 +245,6 @@ footer hr {
 }
 
 .social-icon {
-    /* text-align: center; */
     display: flex;
     justify-content: center;
 }
@@ -265,7 +269,9 @@ footer hr {
 }
 
 
-/* For Upcoming Page */
+/* -------------------------------
+===== UP COMMING PAGE STYLES ======
+-------------------------------- */
 
 .blog-item article .match-info {
     text-align: center;
@@ -292,6 +298,9 @@ footer hr {
 }
 
 
+/* ----------------------
+===== MOBILE RESPONSIVE STYLES ======
+----------------------- */
 @media only screen and (max-width: 576px) {
 
     .container {
@@ -373,11 +382,9 @@ footer hr {
     }
 }
 
-
-
-
-
-
+/* -------------------------------
+===== TAB RESPONSIVE STYLES ======
+-------------------------------- */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
 
     .container {
@@ -407,7 +414,6 @@ footer hr {
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-
 
     .header-img img {
         right: 0;
@@ -468,5 +474,4 @@ footer hr {
     nav a {
         margin-right: 30px;
     }
-
 }
