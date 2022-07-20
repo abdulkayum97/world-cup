@@ -10,8 +10,13 @@ body {
 Header Style 
 -------------- */
 
-.header-container {
+.container {
     width: 1120px;
+    margin: auto
+}
+
+.header-container {
+    width: 100%;
     display: grid;
     margin: auto;
     background-color: #161616;
@@ -23,6 +28,7 @@ Header Style
     grid-column-gap: 24px;
     height: 646px;
     position: relative;
+    ;
 }
 
 .header-content {
@@ -69,7 +75,7 @@ Header Style
 
 /* Blog Style */
 .blog-container {
-    width: 1320px;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 312px 1fr;
@@ -81,7 +87,7 @@ Header Style
     background-color: #161616;
     border-radius: 10px;
     padding: 30px;
-    height: 250px;
+    height: 240px;
 }
 
 .blog-menu ul {
@@ -100,6 +106,17 @@ Header Style
     padding: 17px;
     text-decoration: none;
     display: block;
+    transition: .4s all ease-in-out;
+}
+
+.blog-menu ul li a:hover {
+    background-color: #146ebe;
+    color: #fff;
+}
+
+.blog-menu .active {
+    background-color: #146ebe;
+    color: #fff;
 }
 
 .blog-item {
@@ -118,4 +135,34 @@ Header Style
     padding: 20px;
 }
 
-.blog-item article .blog-content a {}
+.blog-item article .blog-content a {
+    border: 1px solid #161616;
+    border-radius: 5px;
+    color: #161616;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.blog-item article .blog-content h3 {
+    font-size: 18px;
+    color: #161616;
+    line-height: 27px;
+}
+
+.blog-content .blog-info {
+    display: flex;
+    justify-content: start;
+    color: #161616;
+}
+
+
+.blog-content .blog-info .time {
+    margin-right: 30px;
+}
+
+.blog-content .blog-info .time i,
+.blog-content .blog-info .comment i {
+    margin-right: 10px;
+}
