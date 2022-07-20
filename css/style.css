@@ -7,14 +7,21 @@ body {
     padding: 0;
 }
 
+/* COMMON STYLES */
+
+
+.container {
+    width: 1320px;
+}
+
 
 /* ------------
 Header Style 
 -------------- */
 
-.container {
-    width: 1320px;
-    margin: auto;
+header {
+    display: flex;
+    justify-content: center;
 }
 
 .header-container {
@@ -44,7 +51,7 @@ Header Style
     width: 581px;
 }
 
-.header-container .header-content h1 {
+.header-title {
     color: #fff;
     font-size: 70px;
     line-height: 80px;
@@ -52,7 +59,7 @@ Header Style
     margin: 0;
 }
 
-.header-container .header-content p {
+.header-paragraph p {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 30px;
@@ -74,8 +81,26 @@ Header Style
     color: #146ebe;
 }
 
+.view-all {
+    text-align: center;
+    display: none;
+}
+
+.view-all a {
+    padding: 12px 29px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #146ebe;
+    color: #fff;
+}
+
 
 /* Blog Style */
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .blog-container {
     width: 100%;
     display: grid;
@@ -128,6 +153,10 @@ Header Style
     grid-row-gap: 24px;
 }
 
+.blog-item img {
+    width: 100%;
+}
+
 .blog-item article {
     border: 2px solid #E8E8E8;
     border-radius: 10px;
@@ -170,13 +199,15 @@ Header Style
 }
 
 /* Footer Style */
+
 footer {
     background-color: #161616;
     padding-top: 130px;
     padding-bottom: 130px;
+    display: flex;
+    justify-content: center;
 }
 
-.footer-content {}
 
 .footer-content h2 {
     font-weight: 600;
@@ -203,10 +234,187 @@ footer hr {
     padding: 0;
 }
 
-.footer-menu ul li {}
 
 .footer-menu ul li a {
-    color: #fff;
+    color: #B9B9B9;
     text-decoration: none;
     font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .header-container {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .header-content {
+        padding: 28px 38px;
+    }
+
+    .header-title {
+        font-size: 22px;
+        color: red;
+    }
+
+
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 24px 0;
+    }
+
+    .blog-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog-menu {
+        background-color: transparent;
+    }
+
+    .blog-menu a {
+        display: inline-block;
+        border: 1px solid #E8E8E8;
+    }
+
+    footer {
+        padding: 24px 0
+    }
+
+    footer hr {
+        margin: 24px 0;
+    }
+
+    .footer-menu {
+        padding: 0;
+    }
+
+    .footer-menu ul {
+        flex-direction: column;
+    }
+
+    .footer-menu ul li {
+        text-align: center;
+        line-height: 50px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    main {}
+
+    .container {
+        padding: 0 50px
+    }
+
+    .header-content {
+        padding-left: 71px;
+    }
+
+    .header-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .header-paragraph {
+        overflow: hidden;
+        width: 577px;
+    }
+
+    .header-content p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+
+    header img {
+        display: none;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 24px 0;
+    }
+
+    .blog-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog-menu {
+        background-color: transparent;
+        height: auto;
+        padding: 0;
+    }
+
+    .blog-menu ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog-menu ul li {
+        width: 30%;
+        padding-bottom: 30px;
+    }
+
+    .blog-menu a {
+        border: 1px solid #E8E8E8;
+        text-align: center;
+    }
+
+    .blog-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view-all {
+        display: block;
+        margin: 50px auto 70px;
+    }
+
+    .container-fluid {
+        padding: 70px 0;
+    }
+
+    footer hr {
+        margin: 30px 0;
+    }
+
+    .footer-menu {
+        padding: 0 93px;
+    }
+
 }
